@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="styles/index.css" />
+
+        <title>Calculator</title>
+    </head>
+    <body>
+        
+        <div class="calculator-container">
+            <button class="calculator-result" id="calculator-result">0</button>
+            <div class="calculator-buttonGroup">
+                <button class="calculator-button calculator-button--dark" onclick="captureButtonCleanResult()">AC</button>
+                <button class="calculator-button calculator-button--dark" onclick="captureButtonNegativePositive()">+/-</button>
+                <button class="calculator-button calculator-button--dark" onclick="captureButtonPerc()">%</button>
+                <button class="calculator-button calculator-button--orange calculator-button--border-right" onclick="captureButtonDiv()">/</button>
+            </div>
+            <div class="calculator-buttonGroup">
+                <button class="calculator-button" name="calculator-button-numeric">7</button>
+                <button class="calculator-button" name="calculator-button-numeric">8</button>
+                <button class="calculator-button" name="calculator-button-numeric">9</button>
+                <button class="calculator-button calculator-button--orange calculator-button--border-right" onclick="captureButtonMult()">X</button>
+            </div>
+            <div class="calculator-buttonGroup">
+                <button class="calculator-button" name="calculator-button-numeric">4</button>
+                <button class="calculator-button" name="calculator-button-numeric">5</button>
+                <button class="calculator-button" name="calculator-button-numeric">6</button>
+                <button class="calculator-button calculator-button--orange calculator-button--border-right" onclick="captureButtonRest()">-</button>
+            </div>
+            <div class="calculator-buttonGroup">
+                <button class="calculator-button" name="calculator-button-numeric">1</button>
+                <button class="calculator-button" name="calculator-button-numeric">2</button>
+                <button class="calculator-button" name="calculator-button-numeric">3</button>
+                <button class="calculator-button calculator-button--orange calculator-button--border-right" id ="calculator-button-plus" onclick="captureButtonPlus()">+</button>
+            </div>
+            <div class="calculator-buttonGroup">
+                <button class="calculator-button calculator-button--double" name="calculator-button-numeric">0</button>
+                <button class="calculator-button" onclick="captureButtondecimal()">,</button>
+                <button class="calculator-button calculator-button--orange calculator-button--border-right" onclick="captureButtonResult()">=</button>
+            </div>
+        </div>
+
+ 
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
