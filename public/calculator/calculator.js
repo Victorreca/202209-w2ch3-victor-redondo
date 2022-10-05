@@ -60,14 +60,13 @@ const division = () => {
 const results = () => {
   if (valuesArray.length === 1) {
     if (valuesArray[0] < 0) {
-      alert("No se puede realizar raiz cuadrada con números negativos");
-    } else {
-      result.push(`****** Operacion número: ${numberCalculator} ******`);
-      result.push(`Raíz cuadrada: ${squareRoot()}`);
-
-      resultPush();
-      continueCalculate();
+      return "No se puede realizar raiz cuadrada con números negativos";
     }
+    result.push(`****** Operacion número: ${numberCalculator} ******`);
+    result.push(`Raíz cuadrada: ${squareRoot()}`);
+
+    resultPush();
+    continueCalculate();
   } else {
     result.push(`****** Operacion número: ${numberCalculator} ******`);
     result.push(`Suma: ${suma()}`);
