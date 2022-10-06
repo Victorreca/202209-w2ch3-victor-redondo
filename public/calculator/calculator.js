@@ -39,7 +39,7 @@ const resta = () => {
 
 const multiplicacion = () => {
   let acc = valuesArray[0];
-  for (let i = 1; i < valuesArray.length; i++) {
+  for (let i = 1; i < valuesArray.length; i += 1) {
     acc *= valuesArray[i];
   }
   return acc.toFixed(3);
@@ -51,7 +51,7 @@ const division = () => {
   }
 
   let acc = valuesArray[0];
-  for (let i = 1; i < valuesArray.length; i++) {
+  for (let i = 1; i < valuesArray.length; i += 1) {
     acc /= valuesArray[i];
   }
   return acc.toFixed(3);
