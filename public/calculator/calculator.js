@@ -11,7 +11,7 @@ const askContinue = () => {
 };
 
 const resultPush = () => {
-  for (let i = 0; i < result.length; i++) {
+  for (let i = 0; i < result.length; i += 1) {
     console.log(`${result[i]}`);
   }
   numberCalculator++;
@@ -21,7 +21,7 @@ const squareRoot = () => Math.sqrt(valuesArray[0]).toFixed(3);
 
 const suma = () => {
   let acc = 0;
-  for (let i = 0; i < valuesArray.length; i++) {
+  for (let i = 0; i < valuesArray.length; i += 1) {
     acc += valuesArray[i];
   }
   acc = acc.toFixed(3);
@@ -30,7 +30,7 @@ const suma = () => {
 
 const resta = () => {
   let acc = valuesArray[0];
-  for (let i = 1; i < valuesArray.length; i++) {
+  for (let i = 1; i < valuesArray.length; i += 1) {
     acc -= valuesArray[i];
   }
   acc = acc.toFixed(3);
