@@ -14,7 +14,7 @@ const resultPush = () => {
   for (let i = 0; i < result.length; i += 1) {
     console.log(`${result[i]}`);
   }
-  numberCalculator++;
+  numberCalculator += 1;
 };
 
 const squareRoot = () => Math.sqrt(valuesArray[0]).toFixed(3);
